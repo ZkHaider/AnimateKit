@@ -27,7 +27,7 @@ public struct ViewAnimation: Animation {
 extension ViewAnimation {
     
     public static func alpha(to alpha: CGFloat,
-                             duration: TimeInterval,
+                             duration: TimeInterval = 0.3,
                              delay: TimeInterval = 0.0,
                              options: UIView.AnimationOptions = .curveEaseInOut,
                              restoreIdentity: Bool = false) -> ViewAnimation {
@@ -40,7 +40,7 @@ extension ViewAnimation {
         })
     }
     
-    public static func fadeOut(duration: TimeInterval,
+    public static func fadeOut(duration: TimeInterval = 0.3,
                                delay: TimeInterval = 0.0,
                                options: UIView.AnimationOptions = .curveEaseInOut,
                                restoreIdentity: Bool = false ) -> ViewAnimation {
@@ -53,7 +53,7 @@ extension ViewAnimation {
         })
     }
     
-    public static func fadeIn(duration: TimeInterval,
+    public static func fadeIn(duration: TimeInterval = 0.3,
                               delay: TimeInterval = 0.0,
                               options: UIView.AnimationOptions = .curveEaseInOut,
                               restoreIdentity: Bool = false) -> ViewAnimation {
@@ -67,7 +67,7 @@ extension ViewAnimation {
     }
     
     public static func scale(to size: CGSize,
-                             duration: TimeInterval,
+                             duration: TimeInterval = 0.3,
                              delay: TimeInterval = 0.0,
                              options: UIView.AnimationOptions = .curveEaseInOut,
                              restoreIdentity: Bool = false) -> ViewAnimation {
@@ -80,8 +80,22 @@ extension ViewAnimation {
         })
     }
     
+    public static func scale(byX x: CGFloat,
+                             y: CGFloat,
+                             duration: TimeInterval = 0.3,
+                             delay: TimeInterval = 0.0,
+                             options: UIView.AnimationOptions = .curveEaseIn,
+                             restoreIdentity: Bool = false) -> ViewAnimation {
+        return ViewAnimation(duration: duration,
+                             delay: delay,
+                             options: options,
+                             closure: {
+                                $0.transform = CGAffineTransform(scaleX: x, y: y)
+        })
+    }
+    
     public static func resize(to size: CGSize,
-                              duration: TimeInterval,
+                              duration: TimeInterval = 0.3,
                               delay: TimeInterval = 0.0,
                               options: UIView.AnimationOptions = .curveEaseInOut,
                               restoreIdentity: Bool = false) -> ViewAnimation {
@@ -107,6 +121,25 @@ extension ViewAnimation {
                                 $0.center.y += y
                                 if restoreIdentity { $0.transform = .identity }
         }
+    }
+    
+    public static func move(to point: CGPoint,
+                            currentView: UIView,
+                            relativeView: UIView,
+                            duration: TimeInterval = 0.3,
+                            delay: TimeInterval = 0.0,
+                            options: UIView.AnimationOptions = .curveEaseInOut,
+                            restoreIdentity: Bool = false) -> ViewAnimation {
+        
+        // Calculate the relative point from current view to relative view
+        let relativePoint = currentView.convert(point, to: relativeView)
+        return ViewAnimation(duration: duration,
+                             delay: delay,
+                             options: options,
+                             closure: {
+                                $0.center = relativePoint
+                                if restoreIdentity { $0.transform = .identity }
+        })
     }
     
 }

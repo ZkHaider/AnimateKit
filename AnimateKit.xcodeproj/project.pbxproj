@@ -20,6 +20,7 @@
 		4BCE539021BE1AA500D65FBF /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE538F21BE1AA500D65FBF /* UIView+Animations.swift */; };
 		4BCE539221BE1AAD00D65FBF /* UILabel+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE539121BE1AAD00D65FBF /* UILabel+Animations.swift */; };
 		4BCE539421BE1AC600D65FBF /* AnimateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCE532021BE19F300D65FBF /* AnimateKit.framework */; };
+		4BCE539621BE1BB500D65FBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE539521BE1BB500D65FBF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4BCE538C21BE1A5A00D65FBF /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		4BCE538F21BE1AA500D65FBF /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		4BCE539121BE1AAD00D65FBF /* UILabel+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Animations.swift"; sourceTree = "<group>"; };
+		4BCE539521BE1BB500D65FBF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		4BCE52FD21BE19C700D65FBF = {
 			isa = PBXGroup;
 			children = (
+				4BCE539521BE1BB500D65FBF /* README.md */,
 				4BCE532D21BE1A0500D65FBF /* Example */,
 				4BCE532121BE19F300D65FBF /* AnimateKit */,
 				4BCE530721BE19C700D65FBF /* Products */,
@@ -230,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCE539621BE1BB500D65FBF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
