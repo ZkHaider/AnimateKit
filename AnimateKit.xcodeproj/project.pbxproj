@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7B08A721C72F0400B9BDC9 /* CALayer+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B08A621C72F0400B9BDC9 /* CALayer+Animations.swift */; };
+		4B7B08A921C72F0E00B9BDC9 /* Core.Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B08A821C72F0E00B9BDC9 /* Core.Animation.swift */; };
 		4BCE532421BE19F300D65FBF /* AnimateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCE532221BE19F300D65FBF /* AnimateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BCE532F21BE1A0500D65FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE532E21BE1A0500D65FBF /* AppDelegate.swift */; };
 		4BCE533121BE1A0500D65FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE533021BE1A0500D65FBF /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7B08A621C72F0400B9BDC9 /* CALayer+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animations.swift"; sourceTree = "<group>"; };
+		4B7B08A821C72F0E00B9BDC9 /* Core.Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.Animation.swift; sourceTree = "<group>"; };
 		4BCE532021BE19F300D65FBF /* AnimateKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCE532221BE19F300D65FBF /* AnimateKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateKit.h; sourceTree = "<group>"; };
 		4BCE532321BE19F300D65FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		4BCE538421BE1A2300D65FBF /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4B7B08A821C72F0E00B9BDC9 /* Core.Animation.swift */,
 				4BCE538721BE1A3E00D65FBF /* View.Animation.swift */,
 				4BCE538521BE1A3600D65FBF /* Text.Animation.swift */,
 				4BCE539721BE280B00D65FBF /* StackView.Animation.swift */,
@@ -131,6 +136,7 @@
 		4BCE538E21BE1A9900D65FBF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4B7B08A621C72F0400B9BDC9 /* CALayer+Animations.swift */,
 				4BCE538F21BE1AA500D65FBF /* UIView+Animations.swift */,
 				4BCE539121BE1AAD00D65FBF /* UILabel+Animations.swift */,
 			);
@@ -259,10 +265,12 @@
 			files = (
 				4BCE538821BE1A3E00D65FBF /* View.Animation.swift in Sources */,
 				4BCE538621BE1A3600D65FBF /* Text.Animation.swift in Sources */,
+				4B7B08A721C72F0400B9BDC9 /* CALayer+Animations.swift in Sources */,
 				4BCE539021BE1AA500D65FBF /* UIView+Animations.swift in Sources */,
 				4BCE538B21BE1A5100D65FBF /* AnimationToken.swift in Sources */,
 				4BCE538D21BE1A5A00D65FBF /* Animate.swift in Sources */,
 				4BCE539821BE280B00D65FBF /* StackView.Animation.swift in Sources */,
+				4B7B08A921C72F0E00B9BDC9 /* Core.Animation.swift in Sources */,
 				4BCE539221BE1AAD00D65FBF /* UILabel+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
